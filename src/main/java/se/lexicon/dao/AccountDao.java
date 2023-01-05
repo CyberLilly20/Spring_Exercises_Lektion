@@ -1,2 +1,6 @@
-package se.lexicon.dao;public interface AccountDao {
+package se.lexicon.dao;
+
+import se.lexicon.model.Account;
+
+public interface AccountDao  extends BaseDao<Account, Long>{
 }

@@ -1,2 +1,6 @@
-package se.lexicon.dao;public interface TransactionDao {
+package se.lexicon.dao;
+
+import se.lexicon.model.Transaction;
+
+public interface TransactionDao extends BaseDao<Transaction, String> {
 }

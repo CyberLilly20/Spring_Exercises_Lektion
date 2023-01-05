@@ -1,2 +1,4 @@
-package se.lexicon.model;public class Transaction {
+package se.lexicon.model;
+
+public class Transaction {
 }
