@@ -7,7 +7,7 @@ public class AccountIdGenerator {
     private static final int MIN = 100000;
 
 
-    private static int nextId(){
+    private static long nextId(){
         return ++sequencer;
     }
     private static long getRandomNumber(){
