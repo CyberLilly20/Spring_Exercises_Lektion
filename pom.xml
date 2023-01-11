@@ -20,7 +20,7 @@
     <packaging>jar</packaging>
 
     <name>Spring_Exercises_Lektion</name>
-    <url>http://maven.apache.org</url>
+    <url>http://maven.apac he.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

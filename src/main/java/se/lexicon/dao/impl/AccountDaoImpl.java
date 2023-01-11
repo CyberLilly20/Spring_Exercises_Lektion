@@ -3,6 +3,7 @@ package se.lexicon.dao.impl;
 import org.springframework.stereotype.Component;
 import se.lexicon.dao.AccountDao;
 import se.lexicon.dao.sequencer.AccountIdGenerator;
+import se.lexicon.exception.DataNotFoundException;
 import se.lexicon.model.Account;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
-//@Component //example 1
+@Component //example 1
 public class AccountDaoImpl implements AccountDao {
 
     private List<Account> storage = new ArrayList<>();
@@ -45,7 +46,25 @@ public class AccountDaoImpl implements AccountDao {
     }
 
     @Override
-    public void remove(Long aLong) {
+    public void remove(Long accountId) throws DataNotFoundException {
+        Optional<Account> optionalAccount = findById(accountId);
+        if (!optionalAccount.isPresent()) throw new DataNotFoundException("Data not found exception");
+        else storage.remove(optionalAccount.get());
 
+    }
+
+    @Override
+    public void updateBalance(Account account) throws DataNotFoundException {
+        //step1: validate the method parameter
+        //step2: check the account id
+        //step3: update account
+        if (account == null) throw new IllegalArgumentException("Account data was null");
+        Optional<Account> optionalAccount = findById(account.getId());
+        if(!optionalAccount.isPresent())throw new DataNotFoundException("data not found");
+        else storage.forEach(element->{
+            if(element.getId().equals(account.getId())){
+                element.setBalance(account.getBalance());
+            }
+        });
     }
 }

@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41aff451-5005-4f36-8d07-ebab32a0db85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/sequencer/CustomerIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/service/impl/CustomerServiceImpl.java" afterDir="false" />
+    <list default="true" id="41aff451-5005-4f36-8d07-ebab32a0db85" name="Changes" comment="added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/exception/DataNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/dao/AccountDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/BaseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/sequencer/AccountIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/dao/sequencer/AccountIdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,63 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="JUnit.AccountDaoTest.remove_throws_exception">
+    <configuration name="AccountDaoTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Exercises_Lektion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.lexicon.dao" />
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.dao.AccountDaoTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountDaoTest.findBuId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Exercises_Lektion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.lexicon.dao" />
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.dao.AccountDaoTest" />
+      <option name="METHOD_NAME" value="findBuId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountDaoTest.remove_throws_exception" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Exercises_Lektion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.lexicon.dao" />
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.dao.AccountDaoTest" />
+      <option name="METHOD_NAME" value="remove_throws_exception" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountDaoTest.remove_throws_exception" />
+        <item itemvalue="JUnit.AccountDaoTest.findBuId" />
+        <item itemvalue="JUnit.AccountDaoTest.findAll" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,6 +113,13 @@
       <option name="presentableId" value="Default" />
       <updated>1672909385844</updated>
     </task>
+    <task id="LOCAL−00001" summary="added">
+      <created>1673350017218</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1673350017218</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,5 +132,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added" />
+    <option name="LAST_COMMIT_MESSAGE" value="added" />
   </component>
 </project>

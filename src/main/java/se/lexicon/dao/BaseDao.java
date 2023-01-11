@@ -1,5 +1,6 @@
 package se.lexicon.dao;
 
+import se.lexicon.exception.DataNotFoundException;
 import se.lexicon.model.Account;
 
 import java.util.Collection;
@@ -11,5 +12,5 @@ public interface BaseDao<T, ID> {
     Optional<T> findById(ID id);
     Collection<T> findAll();
 
-    void remove(ID id);
+    void remove(ID id) throws DataNotFoundException;
 }

@@ -10,8 +10,8 @@ import se.lexicon.dao.impl.AccountDaoImpl;
 @ComponentScan(basePackages = "se.lexicon")
 public class AppConfig {
 
-    @Bean
+   /* @Bean
     public AccountDao accountDao(){
         return new AccountDaoImpl();
-    } //example 2 it is better to use this
+    } //example 2 it is better to use this*/
 }
