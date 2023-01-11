@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import se.lexicon.dao.AccountDao;
 import se.lexicon.dao.CustomerDao;
+import se.lexicon.exception.DataNotFoundException;
 import se.lexicon.model.Account;
 import se.lexicon.model.Customer;
 import se.lexicon.service.CustomerService;
@@ -43,5 +44,13 @@ public class CustomerServiceImpl implements CustomerService {
 
         Customer createdCustomer = customerDao.create(customerData);
         return createdCustomer;
+    }
+
+    @Override
+    public Customer findById(Long id) throws DataNotFoundException {
+        if(id == null)throw new IllegalArgumentException("id was null");
+        return customerDao.findById(id)
+                .orElseThrow(()->new DataNotFoundException("data not found"));
+
     }
 }
