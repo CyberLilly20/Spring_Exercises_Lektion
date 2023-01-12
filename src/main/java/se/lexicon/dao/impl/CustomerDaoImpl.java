@@ -61,6 +61,5 @@ public class CustomerDaoImpl implements CustomerDao {
         return storage.stream()
                 .filter(element-> element.getFirstName().equals(firstName))
                 .collect(Collectors.toList());
-
     }
 }

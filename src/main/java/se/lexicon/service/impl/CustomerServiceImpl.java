@@ -10,7 +10,7 @@ import se.lexicon.model.Customer;
 import se.lexicon.service.CustomerService;
 @Component
 
-public class CustomerServiceImpl implements CustomerService {
+public class  CustomerServiceImpl implements CustomerService {
 
     AccountDao accountDao;
     CustomerDao customerDao;
